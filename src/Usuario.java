@@ -39,12 +39,12 @@ class Usuario {
             livro.devolver();
             livrosEmprestados.remove(livro);
         } else {
-            System.out.println("Você não pegou emprestadoeste livro: (id= " + id + ", nome= " + nome +")" );
+            System.out.println("Este livro não foi emprestado para o usuário: (id= " + id + ", nome= " + nome + ", livrosEmprestados= " + livrosEmprestados +")" );
         }
     }
 
     @Override
     public String toString() {
-        return "Usuario (id=" + id + ", nome=" + nome + ", livrosEmprestados=" + livrosEmprestados + ")";
+        return "Usuario (id=" + id + ", nome=" + nome + ", livrosEmprestados= " + livrosEmprestados + ")";
     }
 }
